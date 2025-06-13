@@ -7,9 +7,16 @@ headingDivider: 1
 
 # Fully Convolutional Networks for Semantic Segmentation
 
+今回は、CNNをピクセル単位の学習・推論が必要なセグメンテーションタスクに応用する手法を提案したFully Convolutional Networks for Semantic Segmentationという論文について説明します。
 
-Fully Convolutional Networks：全結合層を持たず、線形層が全て畳み込み層だけで構成されているCNN。そのため、Deconvolution（転置畳み込み）を用いることで任意のサイズの入力を受け取り、対応するサイズの出力を効率的に推論・学習することが可能なネットワーク
+---
 
+
+Fully Convolutional Networksとは...
+
+全結合層を持たず、線形層が全て畳み込み層だけで構成されているCNN。そのため、Deconvolution（転置畳み込み）を用いることで任意のサイズの入力を受け取り、対応するサイズの出力を効率的に推論・学習することが可能なネットワーク
+
+このような，全結合層を無くして「出力層付近(ヘッド)も，全て畳み込み層で済ませるCNN」を，全結合が終盤に備わっているCNNと区別する意味で，「Fully Convolutional なニューラルネットワーク」(あるいは「Fully convolutional な CNN = FCN」)と呼ぶ．
 
 ---
 
